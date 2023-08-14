@@ -20,25 +20,27 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.18.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="主要是前端技术相关的内容">
-<meta property="og:type" content="website">
-<meta property="og:title" content="sunlinya的博客">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="前后端分离架构&lt;ajax促进了前后端分离的发展&gt;，AJAX担起了前后端之间通信的技术桥梁 缺点： 前端缺乏独立部署能力，整体流程依赖后端环境 nodejs的广泛使用促进了前端技术的飞速发展1.1 各种打包工具，构建工具应运而生1.2诞生了多元化前端开发方式，使得前端开发可以脱离整体后端环境 单页面架构：打包： gulp，rollup， webpack， vite，  框架: vue r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微前端">
+<meta property="og:url" content="http://example.com/2023/08/08/%E5%BE%AE%E5%89%8D%E7%AB%AF/index.html">
 <meta property="og:site_name" content="sunlinya的博客">
-<meta property="og:description" content="主要是前端技术相关的内容">
+<meta property="og:description" content="前后端分离架构&lt;ajax促进了前后端分离的发展&gt;，AJAX担起了前后端之间通信的技术桥梁 缺点： 前端缺乏独立部署能力，整体流程依赖后端环境 nodejs的广泛使用促进了前端技术的飞速发展1.1 各种打包工具，构建工具应运而生1.2诞生了多元化前端开发方式，使得前端开发可以脱离整体后端环境 单页面架构：打包： gulp，rollup， webpack， vite，  框架: vue r">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-08-08T15:25:05.000Z">
+<meta property="article:modified_time" content="2023-08-14T13:23:47.448Z">
 <meta property="article:author" content="sulinya">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/">
+<link rel="canonical" href="http://example.com/2023/08/08/%E5%BE%AE%E5%89%8D%E7%AB%AF/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2023/08/08/%E5%BE%AE%E5%89%8D%E7%AB%AF/","path":"2023/08/08/微前端/","title":"微前端"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>sunlinya的博客</title>
+<title>微前端 | sunlinya的博客</title>
   
 
 
@@ -71,7 +73,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">sunlinya的博客</h1>
+      <p class="site-title">sunlinya的博客</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">sulinya记笔记的地方，要动起手来！</p>
@@ -98,7 +100,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -111,6 +113,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E9%A1%B5%E9%9D%A2%E6%9E%B6%E6%9E%84%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">单页面架构：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A4%A7%E5%89%8D%E7%AB%AF%E6%97%B6%E4%BB%A3"><span class="nav-number">2.</span> <span class="nav-text">大前端时代</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%BE%AE%E5%89%8D%E7%AB%AF%E7%AD%89%E6%96%B0%E5%9E%8B%E6%9E%B6%E6%9E%84%EF%BC%9A"><span class="nav-number">3.</span> <span class="nav-text">微前端等新型架构：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BD%AF%E4%BB%B6%E8%AE%BE%E8%AE%A1%E5%8E%9F%E5%88%99%E5%92%8C%E5%88%86%E5%B1%82%EF%BC%9A"><span class="nav-number">4.</span> <span class="nav-text">软件设计原则和分层：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%84%E5%90%88-%E8%81%9A%E5%90%88%E5%A4%8D%E7%94%A8%E5%8E%9F%E5%88%99%EF%BC%9A"><span class="nav-number">5.</span> <span class="nav-text">组合&#x2F;聚合复用原则：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%97%A0%E7%8E%AF%E4%BE%9D%E8%B5%96%E5%8E%9F%E5%88%99%EF%BC%9A"><span class="nav-number">6.</span> <span class="nav-text">无环依赖原则：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B1%E5%90%8C%E5%B0%81%E8%A3%85%E5%8E%9F%E5%88%99%EF%BC%9A"><span class="nav-number">7.</span> <span class="nav-text">共同封装原则：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B1%E7%94%A8%E9%87%8D%E7%94%A8%E5%8E%9F%E5%88%99"><span class="nav-number">8.</span> <span class="nav-text">共用重用原则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%A5%BD%E8%8E%B1%E5%9D%9E%E5%8E%9F%E5%88%99"><span class="nav-number">9.</span> <span class="nav-text">好莱坞原则</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -140,182 +143,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-Hexo-Hello%20copy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="sulinya">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sunlinya的博客">
-      <meta itemprop="description" content="主要是前端技术相关的内容">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | sunlinya的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-Hexo-Hello%20copy/" class="post-title-link" itemprop="url">Untitled</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-08-10 00:13:17" itemprop="dateCreated datePublished" datetime="2023-08-10T00:13:17+08:00">2023-08-10</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-08-11 01:04:03" itemprop="dateModified" datetime="2023-08-11T01:04:03+08:00">2023-08-11</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>更换 Hexo 主题非常容易，只需要在 themes 文件夹内，新增一个任意名称的文件夹，并修改 _config.yml 内的 theme 设定，即可切换主题。</p>
-<p>在Hexo官方页面给出了很多Hexo主题，可以前往寻找一个喜欢的主题。更换 Hexo 主题非常容易，只需要在 themes 文件夹内，新增一个任意名称的文件夹，并修改 _config.yml 内的 theme 设定，即可切换主题。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/2023/08/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-Hexo-Hello%20copy/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/09/text/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="sulinya">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sunlinya的博客">
-      <meta itemprop="description" content="主要是前端技术相关的内容">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | sunlinya的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/09/text/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2023-08-09 23:59:23 / Modified: 23:59:28" itemprop="dateCreated datePublished" datetime="2023-08-09T23:59:23+08:00">2023-08-09</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/08/%E5%BE%AE%E5%89%8D%E7%AB%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -329,13 +167,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | sunlinya的博客">
+      <meta itemprop="name" content="微前端 | sunlinya的博客">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/08/%E5%BE%AE%E5%89%8D%E7%AB%AF/" class="post-title-link" itemprop="url">微前端</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          微前端
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -364,8 +202,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>前后端分离架构&lt;ajax促进了前后端分离的发展&gt;，AJAX担起了前后端之间通信的技术桥梁</p>
+    <div class="post-body" itemprop="articleBody"><p>前后端分离架构&lt;ajax促进了前后端分离的发展&gt;，AJAX担起了前后端之间通信的技术桥梁</p>
 <p>缺点： 前端缺乏独立部署能力，整体流程依赖后端环境</p>
 <p>nodejs的广泛使用促进了前端技术的飞速发展<br>1.1 各种打包工具，构建工具应运而生<br>1.2诞生了多元化前端开发方式，使得前端开发可以脱离整体后端环境</p>
 <h4 id="单页面架构："><a href="#单页面架构：" class="headerlink" title="单页面架构："></a>单页面架构：</h4><pre><code>打包： gulp，rollup， webpack， vite， 
@@ -441,7 +278,6 @@ node版本管理： nvm
 如何保证架构的质量-稳定性和健壮性
 </code></pre>
 
-      
     </div>
 
     
@@ -449,161 +285,25 @@ node版本管理： nvm
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/08/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-Hexo-Hello/" rel="prev" title="我的第一篇博客 Hexo Hello!">
+                  <i class="fa fa-angle-left"></i> 我的第一篇博客 Hexo Hello!
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/08/09/text/" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-Hexo-Hello/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="sulinya">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sunlinya的博客">
-      <meta itemprop="description" content="主要是前端技术相关的内容">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | sunlinya的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2-Hexo-Hello/" class="post-title-link" itemprop="url">我的第一篇博客 Hexo Hello!</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2023-08-08 23:25:05" itemprop="dateCreated datePublished" datetime="2023-08-08T23:25:05+08:00">2023-08-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2023/08/08/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="sulinya">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="sunlinya的博客">
-      <meta itemprop="description" content="主要是前端技术相关的内容">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | sunlinya的博客">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2023/08/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2023-08-08 23:10:19 / Modified: 23:08:53" itemprop="dateCreated datePublished" datetime="2023-08-08T23:10:19+08:00">2023-08-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
 
 
 
